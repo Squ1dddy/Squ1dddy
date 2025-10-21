@@ -20,6 +20,7 @@ I'm a Year 12 student passionate about cybersecurity, Python development, and et
 ## 🥇 Certifications
 
 - ⏳ Currently completing [Zero to Defender – Udemy](https://tinyurl.com/Zero-To-Defender)
+- ⏳ Currently completing [Try Hack Me - CyberSecurity 101](https://tryhackme.com/paths)
 
 ---
 
