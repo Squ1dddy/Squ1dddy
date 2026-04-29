@@ -6,7 +6,7 @@
 </p>
 
 <p align="center">
-  <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&pause=1000&color=00B4D8&center=true&vCenter=true&width=435&lines=Cybersecurity+%7C+Python+%7C+Web+Security;Always+building%2C+always+learning." alt="Typing SVG" />
+  <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&pause=1000&color=00B4D8&center=true&vCenter=true&width=500&lines=Cybersecurity+%7C+Python+%7C+Web+Security;Always+building%2C+always+learning." alt="Typing SVG" />
 </p>
 
 ---
@@ -55,7 +55,12 @@ I'm a Year 12 HSC student at Inner Sydney High School with a focused interest in
 ## GitHub Stats
 
 <p align="center">
+  <img src="https://github-profile-trophy.vercel.app/?username=Squ1dddy&theme=tokyonight&no-frame=true&row=1&column=6" />
+</p>
+
+<p align="center">
   <img src="https://github-readme-stats.vercel.app/api?username=Squ1dddy&show_icons=true&theme=tokyonight&hide_border=true&count_private=true" height="150"/>
+  <img src="https://github-readme-streak-stats.herokuapp.com?user=Squ1dddy&theme=tokyonight&hide_border=true" height="150"/>
   <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Squ1dddy&layout=compact&theme=tokyonight&hide_border=true" height="150"/>
 </p>
 
