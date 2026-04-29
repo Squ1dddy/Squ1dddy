@@ -39,7 +39,7 @@ I'm a Year 12 HSC student at Inner Sydney High School with a focused interest in
 
 | Status | Certification |
 |--------|--------------|
-| ✅ Completed | [IBM Cybersecurity Fundamentals](https://www.edx.org/certificates/professional-certificate/ibm-cybersecurity-fundamentals) |
+| ✅ Completed | [IBM Cybersecurity Fundamentals – IBM SkillsBuild](https://www.credly.com/badges/f6734584-1a92-45c9-9f51-967a01188640/public_url) |
 | ⏳ In Progress | [Zero to Defender – Udemy](https://tinyurl.com/Zero-To-Defender) |
 
 ---
