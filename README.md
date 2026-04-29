@@ -6,23 +6,21 @@
 </p>
 
 <p align="center">
-  <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&pause=1000&color=00B4D8&center=true&vCenter=true&width=435&lines=Cybersecurity+%7C+Python+%7C+Full-Stack;Always+building%2C+always+learning." alt="Typing SVG" />
+  <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&pause=1000&color=00B4D8&center=true&vCenter=true&width=435&lines=Cybersecurity+%7C+Python+%7C+Web+Security;Always+building%2C+always+learning." alt="Typing SVG" />
 </p>
 
 ---
 
 ## About
 
-I'm a Year 12 HSC student at Inner Sydney High School with a focused interest in cybersecurity, Python development, and building real things. This profile documents my technical progress — projects, certifications, and hands-on work — as I pursue early entry into the [Bachelor of Cybersecurity at UTS](https://www.uts.edu.au/study/find-a-course/bachelor-cybersecurity).
-
-Outside of school I'm actively shipping: I've built a deployed study platform ([HSCHub](https://github.com/Squ1dddy/HSChub)), run a service-based business, and am pursuing prop trading and reselling operations.
+I'm a Year 12 HSC student at Inner Sydney High School with a focused interest in cybersecurity, Python development, and secure software design. This profile documents my technical progress as I pursue early entry into the [Bachelor of Cybersecurity at UTS](https://www.uts.edu.au/study/find-a-course/bachelor-cybersecurity).
 
 ---
 
 ## Tech Stack
 
 <p align="left">
-  <img src="https://skillicons.dev/icons?i=python,js,html,css,react,nextjs,supabase,git,github,vscode" />
+  <img src="https://skillicons.dev/icons?i=python,js,html,css,git,github,vscode,blender" />
 </p>
 
 ---
@@ -30,9 +28,10 @@ Outside of school I'm actively shipping: I've built a deployed study platform ([
 ## Featured Projects
 
 | Project | Description | Stack |
-|--------|-------------|-------|
-| [Text-Based RPG](https://github.com/Squ1dddy/Software-Engineering-Projects/tree/main/in-class-projects/Assessment-Task2) | Turn-based RPG engine with inventory, combat, and branching narrative built in Python | Python |
-| [Learning App](https://github.com/Squ1dddy/Software-Engineering-Projects/tree/main/in-class-projects/Assessment-Task1) | Interactive quiz/learning application | Python |
+|---------|-------------|-------|
+| [Unsecure PWA Security Audit](https://github.com/Squ1dddy/Unsecure_PWA) | Identified and patched 5 real vulnerabilities (XSS, CSRF, SQL injection, broken auth, open redirect) in a Flask PWA. Includes a full professional security report. | Python, Flask, SQLite |
+| [Text-Based RPG](https://github.com/Squ1dddy/Software-Engineering-Projects/tree/main/in-class-projects/Assessment-Task2) | Turn-based RPG engine with inventory, combat, and branching narrative | Python |
+| [Learning App](https://github.com/Squ1dddy/Software-Engineering-Projects/tree/main/in-class-projects/Assessment-Task1) | Interactive quiz and learning application | Python |
 
 ---
 
@@ -48,8 +47,7 @@ Outside of school I'm actively shipping: I've built a deployed study platform ([
 ## Currently
 
 - 📚 Year 12 HSC — Software Design & Development, Business Studies, Maths Advanced, Biology, English
-- 🔐 Deepening practical cybersecurity knowledge through courses and CTF-style platforms
-- 🛠️ Maintaining and iterating on HSCHub
+- 🔐 Deepening practical cybersecurity knowledge through courses and hands-on projects
 - 🎯 Targeting UTS Bachelor of Cybersecurity early entry
 
 ---
@@ -64,7 +62,5 @@ Outside of school I'm actively shipping: I've built a deployed study platform ([
 ---
 
 <p align="center">
-  <a href="https://github.com/Squ1dddy">
-    <img src="https://komarev.com/ghpvc/?username=Squ1dddy&color=00b4d8&style=flat-square&label=Profile+Views" />
-  </a>
+  <img src="https://komarev.com/ghpvc/?username=Squ1dddy&color=00b4d8&style=flat-square&label=Profile+Views" />
 </p>
