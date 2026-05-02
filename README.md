@@ -30,6 +30,7 @@ I'm a Year 12 HSC student at Inner Sydney High School with a focused interest in
 | Project | Description | Stack |
 |---------|-------------|-------|
 | [Unsecure PWA Security Audit](https://github.com/Squ1dddy/Unsecure_PWA) | Identified and patched 5 real vulnerabilities (XSS, CSRF, SQL injection, broken auth, open redirect) in a Flask PWA. Includes a full professional security report. | Python, Flask, SQLite |
+| [BigTow — Trailer Hire System](https://github.com/Squ1dddy/BigTow-Mini-Project) | Terminal-based trailer hire management system with ASCII UI, order processing, and JSON file persistence. | Python |
 | [Text-Based RPG](https://github.com/Squ1dddy/Software-Engineering-Projects/tree/main/in-class-projects/Assessment-Task2) | Turn-based RPG engine with inventory, combat, and branching narrative | Python |
 | [Learning App](https://github.com/Squ1dddy/Software-Engineering-Projects/tree/main/in-class-projects/Assessment-Task1) | Interactive quiz and learning application | Python |
 
