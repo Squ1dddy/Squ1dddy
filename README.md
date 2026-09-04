@@ -1,72 +1,53 @@
-<h1 align="center">Hi, I'm Beau 👋</h1>
+<h1 align="center">Hi, I'm Beau</h1>
 
 <p align="center">
   <b>Year 12 · Sydney, Australia</b><br/>
-  Aspiring Cybersecurity Engineer · Python Developer · Building toward UTS Cybersecurity
-</p>
-
-<p align="center">
-  <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&pause=1000&color=00B4D8&center=true&vCenter=true&width=500&lines=Cybersecurity+%7C+Python+%7C+Web+Security;Always+building%2C+always+learning." alt="Typing SVG" />
+  Cybersecurity and Python · Applying for the Bachelor of Cybersecurity (IDeA) cadetship at UTS
 </p>
 
 ---
 
 ## About
 
-I'm a Year 12 HSC student at Inner Sydney High School with a focused interest in cybersecurity, Python development, and secure software design. This profile documents my technical progress as I pursue early entry into the [Bachelor of Cybersecurity at UTS](https://www.uts.edu.au/study/find-a-course/bachelor-cybersecurity).
+I'm a Year 12 student at Inner Sydney High School, applying for the [Bachelor of Cybersecurity (IDeA)](https://www.uts.edu.au/for-students/admissions-entry/entry-schemes/engineering-and-information-technology-cadetship) at UTS. IDeA is the cadetship stream, so it comes with a paid industry role from first year. That is the part I actually want. I would rather be working on real systems while I study than wait three years to find out what the job is like.
 
----
+The projects below are the closest I have come to that so far. One of them runs a school sports competition that about 70 teams and their spectators actually use, which has taught me more about handling failure than any assignment has.
 
-## Tech Stack
+## How I work
 
-<p align="left">
-  <img src="https://skillicons.dev/icons?i=python,js,html,css,git,github,vscode,blender" />
-</p>
+I like the parts of security that are decisions rather than tools. The one I am most pleased with is small: the admin login on my tournament site reads its password from an environment variable and returns `false` when that variable is missing. If a deploy is misconfigured, the organiser gets locked out instead of the admin panel being open to everyone. It would have been easier to fall back to a default password, and that is exactly how you end up in a breach writeup.
 
----
+I also try to write down what I got wrong. The first ten commits of that project had no Row Level Security, which meant anyone who opened DevTools had a database key that could delete the whole tournament. The README says so.
 
-## Featured Projects
+## Projects
 
-| Project | Description | Stack |
-|---------|-------------|-------|
-| [Unsecure PWA Security Audit](https://github.com/Squ1dddy/Unsecure_PWA) | Identified and patched 5 real vulnerabilities (XSS, CSRF, SQL injection, broken auth, open redirect) in a Flask PWA. Includes a full professional security report. | Python, Flask, SQLite |
-| [BigTow — Trailer Hire System](https://github.com/Squ1dddy/BigTow-Mini-Project) | Terminal-based trailer hire management system with ASCII UI, order processing, and JSON file persistence. | Python |
-| [Text-Based RPG](https://github.com/Squ1dddy/Software-Engineering-Projects/tree/main/in-class-projects/Assessment-Task2) | Turn-based RPG engine with inventory, combat, and branching narrative | Python |
-| [Learning App](https://github.com/Squ1dddy/Software-Engineering-Projects/tree/main/in-class-projects/Assessment-Task1) | Interactive quiz and learning application | Python |
-
----
+| Project | What it is | Stack |
+|---------|-----------|-------|
+| **[insydsport](https://github.com/Squ1dddy/insydsport)** · [live](https://insydsport.live) | Tournament platform running a school handball competition. Live scoring, bracket trees, an admin console, and an offline score journal for when the school wifi drops. RLS on every table, rate-limited admin login, fail-closed auth. | Next.js 15, React 19, TypeScript, Supabase, Tailwind |
+| **[unsecure-pwa-security-audit](https://github.com/Squ1dddy/unsecure-pwa-security-audit)** | Security assessment of a deliberately vulnerable Flask PWA. Five vulnerability classes found by manual review and testing, each patched and mapped to OWASP, with a full written report. | Python, Flask, SQLite, bcrypt |
+| **[bigtow-trailer-hire](https://github.com/Squ1dddy/bigtow-trailer-hire)** | Terminal trailer hire system with order processing, customer lookup and JSON persistence. | Python |
+| **[hsc-software-engineering](https://github.com/Squ1dddy/hsc-software-engineering)** | Software Design and Development coursework. A text RPG with a real class hierarchy, a console maths tutor, a Flask PWA and early web work. | Python, Flask, HTML, CSS |
 
 ## Certifications
 
 | Status | Certification |
 |--------|--------------|
-| ✅ Completed | [IBM Cybersecurity Fundamentals – IBM SkillsBuild](https://www.credly.com/badges/f6734584-1a92-45c9-9f51-967a01188640/public_url) |
-| ⏳ In Progress | [ISC2 Certified in Cybersecurity (CC)](https://www.isc2.org/certifications/cc) |
-
----
+| Completed | [IBM Cybersecurity Fundamentals, IBM SkillsBuild](https://www.credly.com/badges/f6734584-1a92-45c9-9f51-967a01188640/public_url) |
+| In progress | [ISC2 Certified in Cybersecurity (CC)](https://www.isc2.org/certifications/cc) |
 
 ## Currently
 
-- 📚 Year 12 HSC — Software Design & Development, Business Studies, Maths Advanced, Biology, English
-- 🔐 Deepening practical cybersecurity knowledge through courses and hands-on projects
-- 🎯 Targeting UTS Bachelor of Cybersecurity early entry
+- Year 12 HSC: Software Design and Development, Business Studies, Maths Advanced, Biology, English
+- Working through the ISC2 CC material
+- Maintaining insydsport between competition rounds
 
----
+## Tech
 
-## GitHub Stats
-
-<p align="center">
-  <img src="https://github-profile-trophy.vercel.app/?username=Squ1dddy&theme=tokyonight&no-frame=true&row=1&column=6" />
+<p align="left">
+  <img src="https://skillicons.dev/icons?i=python,ts,js,react,nextjs,tailwind,supabase,flask,html,css,git,github,vscode" />
 </p>
 
 <p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=Squ1dddy&show_icons=true&theme=tokyonight&hide_border=true&count_private=true" height="150"/>
-  <img src="https://github-readme-streak-stats.herokuapp.com?user=Squ1dddy&theme=tokyonight&hide_border=true" height="150"/>
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Squ1dddy&layout=compact&theme=tokyonight&hide_border=true" height="150"/>
-</p>
-
----
-
-<p align="center">
-  <img src="https://komarev.com/ghpvc/?username=Squ1dddy&color=00b4d8&style=flat-square&label=Profile+Views" />
+  <a href="https://github.com/Squ1dddy?tab=repositories">Repositories</a> ·
+  <a href="https://insydsport.live">insydsport.live</a>
 </p>
