@@ -44,17 +44,21 @@ In-class assessment tasks from Software Engineering at Inner Sydney High School,
 | 📐 | **[console-maths-tutor](https://github.com/Squ1dddy/console-maths-tutor)** | Terminal maths tutor. Pythagoras solver, area calculator, triangle classifier and a randomised quiz, with a unit test harness for the side-length logic. | 11 |
 | 🏐 | **[volleyball-website](https://github.com/Squ1dddy/volleyball-website)** | Static single-page site, hand-written HTML and CSS with no framework. The earliest work I have kept, here for the record rather than as a showcase. | 10 |
 
-## How I work
+## Skills, and where to check them
 
-Four habits that show up in everything here, and where to check them.
+Every claim below links to the thing that proves it. Traksy's source is private, so its rows point at the live product and the case study instead.
 
-**I build for the failure, not the demo.** Traksy re-checks media consent at the moment a post goes out rather than trusting a queue, because a school that revokes consent after a post is scheduled has to be able to stop it. insydsport writes every score to the scoring phone before it touches the network, because a backup that lives in the same database is not a backup. Both exist because I assumed the happy path would not hold, and on school wifi it did not.
-
-**I write down what I got wrong.** Every repository here has a section for what is still broken or what I would do differently: a service worker that never registers, a stats screen that counts the wrong games, a README that once described features the code never had. A portfolio that only lists wins isn't telling you much, and the habit transfers better than any one project does.
-
-**I use AI heavily, and keep the judgement.** It writes code quickly. It does not decide what the code should do, and that distinction is most of the job. Knowing that a read-write database key in the browser is a hole, that admin auth should fail closed rather than fall back to a default, that a model drafting a newsletter about children should never be handed a roster — that part is mine to bring. Then I use AI to get there faster, and I check what comes back, because I am the one who has to defend it.
-
-**I finish things and put them in front of people.** Two systems are deployed and running rather than sitting in a branch: one that about 70 teams and their spectators used through a live competition, one built for schools and demonstrable end to end. Software with users teaches you things assignments don't, mostly about what happens when it breaks.
+| | Where to check it |
+|---|---|
+| **Postgres RLS and multi-tenancy** | [traksy](https://github.com/Squ1dddy/traksy-showcase) — RLS on every table across 29 migrations, so a school's data is scoped by policy rather than by remembering a `WHERE` clause · insydsport — [`supabase/rls.sql`](https://github.com/Squ1dddy/insydsport/blob/main/supabase/rls.sql) |
+| **Auth, sessions and abuse limits** | insydsport — [`lib/admin-auth.ts`](https://github.com/Squ1dddy/insydsport/blob/main/lib/admin-auth.ts) fails closed when the password variable is missing, [`lib/rate-limit.ts`](https://github.com/Squ1dddy/insydsport/blob/main/lib/rate-limit.ts) throttles failed logins on a rolling window |
+| **OWASP Top 10, applied** | [unsecure-pwa-security-audit](https://github.com/Squ1dddy/unsecure-pwa-security-audit) — five vulnerability classes found by manual review and testing, each patched and mapped, with a [written report](https://github.com/Squ1dddy/unsecure-pwa-security-audit/blob/main/security-assessment-report.pdf) |
+| **SQL injection, both sides** | Broke it: [`user_management.py`](https://github.com/Squ1dddy/unsecure-pwa-security-audit/blob/main/user_management.py) — f-string login query, `hi' or '1'='1` walks straight in. Fixed it: [`database_manager.py`](https://github.com/Squ1dddy/car-catalogue-pwa/blob/main/database_manager.py) — parameterised search over a two-table join |
+| **LLM APIs, with a boundary** | traksy — the model is handed one already-truncated line and never a roster; its system prompt forbids inventing facts and adding names, is hardened against injection through the input, and unit tests assert those constraints still exist |
+| **Privacy and accessibility** | traksy — Australian Privacy Principles 5, 8, 12 and 13, with published [privacy](https://traksy.netlify.app/privacy) and [accessibility](https://traksy.netlify.app/accessibility) statements. WCAG 2.1 AA is the target and the gaps still open are written down rather than claimed closed |
+| **Designing for failure** | insydsport — [`lib/score-journal.ts`](https://github.com/Squ1dddy/insydsport/blob/main/lib/score-journal.ts) writes every score to the scoring phone before the network sees it, because a backup in the same database is not a backup |
+| **Object-oriented design** | [text-adventure-rpg](https://github.com/Squ1dddy/text-adventure-rpg) — [`item.py`](https://github.com/Squ1dddy/text-adventure-rpg/blob/main/item.py) and [`character.py`](https://github.com/Squ1dddy/text-adventure-rpg/blob/main/character.py), subclasses that change behaviour rather than add fields, so a locked door is a room that refuses entry |
+| **Testing** | [`harness.py`](https://github.com/Squ1dddy/terminal-wordle/blob/main/harness.py) covers normal, boundary, faulty and abnormal input · [`unit_test.py`](https://github.com/Squ1dddy/console-maths-tutor/blob/main/unit_test.py) · traksy — 33 test files |
 
 ## Toolkit
 
@@ -63,9 +67,6 @@ Four habits that show up in everything here, and where to check them.
 
 **Frameworks and platforms**<br/>
 ![Flask](https://img.shields.io/badge/Flask-1B2A38?style=flat-square&logo=flask&logoColor=white) ![Supabase](https://img.shields.io/badge/Supabase-3FCF8E?style=flat-square&logo=supabase&logoColor=black) ![Netlify](https://img.shields.io/badge/Netlify-00C7B7?style=flat-square&logo=netlify&logoColor=black)
-
-**Security**<br/>
-![OWASP Top 10](https://img.shields.io/badge/OWASP_Top_10-1B2A38?style=flat-square&logo=owasp&logoColor=white) ![bcrypt](https://img.shields.io/badge/bcrypt-525252?style=flat-square) ![Manual code review](https://img.shields.io/badge/Manual_code_review-6E5494?style=flat-square)
 
 ## Certifications
 
