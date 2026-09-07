@@ -17,7 +17,7 @@
 
 ---
 
-I'm a Year 12 student heading towards a career in **cybersecurity and AI/ML**. What I want out of it is the work itself, early: I'd rather build and break real systems while I study than wait three years to find out what the job is actually like.
+I'm a Year 12 student heading towards a career in **cybersecurity and AI/ML**. What I want out of it is the work itself, early. I'd rather build and break real systems while I study than wait three years to find out what the job is actually like.
 
 The closest I've come so far is a tournament platform that about 70 teams and their spectators use during competition weeks. Software with users teaches you things assignments don't, mostly about what happens when it breaks.
 
@@ -26,39 +26,39 @@ The closest I've come so far is a tournament platform that about 70 teams and th
 Independent work, built outside class and still running.
 
 | | Project | What it is | Built with |
-|:--:|---------|-----------|------------|
-| 🏫 | **[traksy-showcase](https://github.com/Squ1dddy/traksy-showcase)**<br/><sub>🟢 [live demo](https://traksy.netlify.app/demo)</sub> | School sport recognition platform for NSW schools. Log a result on the sideline and it becomes an announcement, a newsletter item and a social post. Postgres RLS multi-tenancy across 29 migrations, publishing gated on media consent at send time, and AI drafting fenced to a single truncated line. Source private, live demo public. | `Next.js` `TypeScript` `Supabase` `Claude API` |
-| 🏆 | **[insydsport](https://github.com/Squ1dddy/insydsport)**<br/><sub>🟢 [live](https://insydsport.live)</sub> | Tournament platform running a school handball competition. Live scoring, bracket trees, an admin console, and an offline score journal for when the school wifi drops out. RLS on every table, rate-limited admin login, fail-closed auth. | `Next.js 15` `React 19` `TypeScript` `Supabase` |
+|:--:|---|---|---|
+| 🏫 | **[traksy](https://github.com/Squ1dddy/traksy-showcase)**<br/><sub>🟢 [live demo](https://traksy.netlify.app/demo)</sub> | School sport platform for NSW schools. A result logged on the sideline becomes an announcement, a newsletter item and a social post. | `Next.js` `TypeScript` `Supabase` `Claude API` |
+| 🏆 | **[insydsport](https://github.com/Squ1dddy/insydsport)**<br/><sub>🟢 [live](https://insydsport.live)</sub> | Tournament platform for a school handball competition. Live scoring, bracket trees, admin console, offline score journal. | `Next.js` `React` `TypeScript` `Supabase` |
 
 ## HSC Software Engineering
 
-In-class assessment tasks from Software Engineering at Inner Sydney High School, each in its own repository. Newest first.
+In-class assessment tasks, each in its own repository. Newest first.
 
 | | Project | What it is | Year |
-|:--:|---------|-----------|:--:|
-| 🔐 | **[unsecure-pwa-security-audit](https://github.com/Squ1dddy/unsecure-pwa-security-audit)** | Security assessment of a deliberately vulnerable Flask app. Five vulnerability classes found by manual review and testing, each patched, mapped to OWASP, and written up in a full report. | 12 |
-| 🟩 | **[terminal-wordle](https://github.com/Squ1dddy/terminal-wordle)** | A term-long build. Six guesses, colour-coded tiles, a two-player mode and CSV-persisted stats. The guess checker handles duplicate letters in two passes, and a harness tests it against normal, boundary, faulty and abnormal input. | 12 |
-| 🚚 | **[bigtow-trailer-hire](https://github.com/Squ1dddy/bigtow-trailer-hire)** | Terminal trailer hire system. Order processing, cost calculation, customer lookup by surname, JSON persistence. | 12 |
-| 🌐 | **[car-catalogue-pwa](https://github.com/Squ1dddy/car-catalogue-pwa)** | The first project built around databases rather than the language. Flask and SQLite, two tables joined on a foreign key, debounced AJAX search over a JSON endpoint with parameterised queries, six sort routes, plus a service worker and manifest. | 12 |
-| ⚔️ | **[text-adventure-rpg](https://github.com/Squ1dddy/text-adventure-rpg)** | The object-oriented task. `Item`, `Character` and `Room` base classes whose subclasses change behaviour rather than add fields, so a locked door is a room that refuses entry instead of an `if` statement. | 11 |
-| 📐 | **[console-maths-tutor](https://github.com/Squ1dddy/console-maths-tutor)** | Terminal maths tutor. Pythagoras solver, area calculator, triangle classifier and a randomised quiz, with a unit test harness for the side-length logic. | 11 |
-| 🏐 | **[volleyball-website](https://github.com/Squ1dddy/volleyball-website)** | Static single-page site, hand-written HTML and CSS with no framework. The earliest work I have kept, here for the record rather than as a showcase. | 10 |
+|:--:|---|---|:--:|
+| 🔐 | **[unsecure-pwa-security-audit](https://github.com/Squ1dddy/unsecure-pwa-security-audit)** | Five vulnerability classes found by hand, patched and mapped to OWASP, with a written report. | 12 |
+| 🟩 | **[terminal-wordle](https://github.com/Squ1dddy/terminal-wordle)** | A term-long build. Duplicate-letter handling, two-player mode, CSV stats, test harness. | 12 |
+| 🚚 | **[bigtow-trailer-hire](https://github.com/Squ1dddy/bigtow-trailer-hire)** | Trailer hire orders, pricing and customer lookup, saved to JSON. | 12 |
+| 🌐 | **[car-catalogue-pwa](https://github.com/Squ1dddy/car-catalogue-pwa)** | Flask and SQLite. Two joined tables, debounced AJAX search, service worker and manifest. | 12 |
+| ⚔️ | **[text-adventure-rpg](https://github.com/Squ1dddy/text-adventure-rpg)** | The object-oriented task. A locked door is a room that refuses entry, not an `if` statement. | 11 |
+| 📐 | **[console-maths-tutor](https://github.com/Squ1dddy/console-maths-tutor)** | Pythagoras, areas, triangle classification and a quiz, with a unit test harness. | 11 |
+| 🏐 | **[volleyball-website](https://github.com/Squ1dddy/volleyball-website)** | Hand-written HTML and CSS, no framework. Earliest work I've kept, for the record. | 10 |
 
 ## Skills, and where to check them
 
-Every claim below links to the thing that proves it. Traksy's source is private, so its rows point at the live product and the case study instead.
+Every claim links to the thing that proves it. Traksy's source is private, so its rows point at the live product instead.
 
-| | Where to check it |
-|---|---|
-| **Postgres RLS and multi-tenancy** | [traksy](https://github.com/Squ1dddy/traksy-showcase) — RLS on every table across 29 migrations, so a school's data is scoped by policy rather than by remembering a `WHERE` clause · insydsport — [`supabase/rls.sql`](https://github.com/Squ1dddy/insydsport/blob/main/supabase/rls.sql) |
-| **Auth, sessions and abuse limits** | insydsport — [`lib/admin-auth.ts`](https://github.com/Squ1dddy/insydsport/blob/main/lib/admin-auth.ts) fails closed when the password variable is missing, [`lib/rate-limit.ts`](https://github.com/Squ1dddy/insydsport/blob/main/lib/rate-limit.ts) throttles failed logins on a rolling window |
-| **OWASP Top 10, applied** | [unsecure-pwa-security-audit](https://github.com/Squ1dddy/unsecure-pwa-security-audit) — five vulnerability classes found by manual review and testing, each patched and mapped, with a [written report](https://github.com/Squ1dddy/unsecure-pwa-security-audit/blob/main/security-assessment-report.pdf) |
-| **SQL injection, both sides** | Broke it: [`user_management.py`](https://github.com/Squ1dddy/unsecure-pwa-security-audit/blob/main/user_management.py) — f-string login query, `hi' or '1'='1` walks straight in. Fixed it: [`database_manager.py`](https://github.com/Squ1dddy/car-catalogue-pwa/blob/main/database_manager.py) — parameterised search over a two-table join |
-| **LLM APIs, with a boundary** | traksy — the model is handed one already-truncated line and never a roster; its system prompt forbids inventing facts and adding names, is hardened against injection through the input, and unit tests assert those constraints still exist |
-| **Privacy and accessibility** | traksy — Australian Privacy Principles 5, 8, 12 and 13, with published [privacy](https://traksy.netlify.app/privacy) and [accessibility](https://traksy.netlify.app/accessibility) statements. WCAG 2.1 AA is the target and the gaps still open are written down rather than claimed closed |
-| **Designing for failure** | insydsport — [`lib/score-journal.ts`](https://github.com/Squ1dddy/insydsport/blob/main/lib/score-journal.ts) writes every score to the scoring phone before the network sees it, because a backup in the same database is not a backup |
-| **Object-oriented design** | [text-adventure-rpg](https://github.com/Squ1dddy/text-adventure-rpg) — [`item.py`](https://github.com/Squ1dddy/text-adventure-rpg/blob/main/item.py) and [`character.py`](https://github.com/Squ1dddy/text-adventure-rpg/blob/main/character.py), subclasses that change behaviour rather than add fields, so a locked door is a room that refuses entry |
-| **Testing** | [`harness.py`](https://github.com/Squ1dddy/terminal-wordle/blob/main/harness.py) covers normal, boundary, faulty and abnormal input · [`unit_test.py`](https://github.com/Squ1dddy/console-maths-tutor/blob/main/unit_test.py) · traksy — 33 test files |
+| Skill | Evidence | Proof |
+|---|---|:--|
+| **Postgres RLS, multi-tenancy** | RLS on every table across 29 migrations, so data is scoped by policy rather than by remembering a `WHERE` clause. | [traksy](https://github.com/Squ1dddy/traksy-showcase) · [`rls.sql`](https://github.com/Squ1dddy/insydsport/blob/main/supabase/rls.sql) |
+| **Auth and abuse limits** | Admin login fails closed when the password variable is missing. Failed logins throttle on a rolling window. | [`admin-auth.ts`](https://github.com/Squ1dddy/insydsport/blob/main/lib/admin-auth.ts) · [`rate-limit.ts`](https://github.com/Squ1dddy/insydsport/blob/main/lib/rate-limit.ts) |
+| **OWASP Top 10, applied** | Five vulnerability classes found by manual review and testing, each patched and mapped. | [repo](https://github.com/Squ1dddy/unsecure-pwa-security-audit) · [report](https://github.com/Squ1dddy/unsecure-pwa-security-audit/blob/main/security-assessment-report.pdf) |
+| **SQL injection, both sides** | Broke it: an f-string login query where `hi' or '1'='1` walks straight in. Fixed it: parameterised search over a two-table join. | [broke](https://github.com/Squ1dddy/unsecure-pwa-security-audit/blob/main/user_management.py) · [fixed](https://github.com/Squ1dddy/car-catalogue-pwa/blob/main/database_manager.py) |
+| **LLM APIs, with a boundary** | The model gets one truncated line, never a roster. Its prompt forbids inventing facts or adding names, is hardened against injection, and tests assert that. | [traksy](https://github.com/Squ1dddy/traksy-showcase) |
+| **Privacy and accessibility** | Australian Privacy Principles 5, 8, 12 and 13. WCAG 2.1 AA is the target, with the open gaps written down rather than claimed closed. | [privacy](https://traksy.netlify.app/privacy) · [accessibility](https://traksy.netlify.app/accessibility) |
+| **Designing for failure** | Every score is written to the scoring phone before the network sees it, because a backup in the same database is not a backup. | [`score-journal.ts`](https://github.com/Squ1dddy/insydsport/blob/main/lib/score-journal.ts) |
+| **Object-oriented design** | Subclasses change behaviour rather than add fields, so the room decides whether you may enter. | [`item.py`](https://github.com/Squ1dddy/text-adventure-rpg/blob/main/item.py) · [`character.py`](https://github.com/Squ1dddy/text-adventure-rpg/blob/main/character.py) |
+| **Testing** | Cases written for normal, boundary, faulty and abnormal input. 33 test files in Traksy. | [`harness.py`](https://github.com/Squ1dddy/terminal-wordle/blob/main/harness.py) · [`unit_test.py`](https://github.com/Squ1dddy/console-maths-tutor/blob/main/unit_test.py) |
 
 ## Toolkit
 
@@ -71,7 +71,7 @@ Every claim below links to the thing that proves it. Traksy's source is private,
 ## Certifications
 
 | | Certification |
-|:--:|---------------|
+|:--:|---|
 | ✅ | [IBM Cybersecurity Fundamentals](https://www.credly.com/badges/f6734584-1a92-45c9-9f51-967a01188640/public_url) · IBM SkillsBuild |
 | ⏳ | [ISC2 Certified in Cybersecurity (CC)](https://www.isc2.org/certifications/cc) · in progress |
 
