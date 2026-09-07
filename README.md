@@ -3,7 +3,7 @@
 # Beau Bastock
 
 <a href="https://insydsport.live">
-  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=500&size=22&pause=1200&color=00B4D8&center=true&vCenter=true&width=620&lines=Cybersecurity+%C2%B7+AI%2FML+%C2%B7+SQL;Running+a+live+platform+for+70+teams;Building+software+people+actually+use" alt="Cybersecurity, Python, SQL" />
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=500&size=22&pause=1200&color=00B4D8&center=true&vCenter=true&width=620&lines=Cybersecurity+%C2%B7+AI%2FML+%C2%B7+Python;Running+a+live+platform+for+70+teams;Building+software+people+actually+use" alt="Cybersecurity, Python, AI/ML" />
 </a>
 
 <br/>
