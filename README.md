@@ -46,15 +46,15 @@ In-class assessment tasks from Software Engineering at Inner Sydney High School,
 
 ## How I work
 
-The security decision I'm most pleased with is a small one. The admin login on insydsport reads its password from an environment variable and returns `false` when that variable is missing. If a deploy is misconfigured, the organiser gets locked out instead of the admin panel being wide open. The easy alternative, falling back to a default password, is how sites end up in breach writeups.
+Four habits that show up in everything here, and where to check them.
 
-I also try to write down what I got wrong. The first ten commits of that project had **no Row Level Security**, which meant anyone who opened DevTools was holding a database key that could delete the entire tournament. It's fixed, and the README says so, because a portfolio that only lists wins isn't telling you much.
+**I build for the failure, not the demo.** Traksy re-checks media consent at the moment a post goes out rather than trusting a queue, because a school that revokes consent after a post is scheduled has to be able to stop it. insydsport writes every score to the scoring phone before it touches the network, because a backup that lives in the same database is not a backup. Both exist because I assumed the happy path would not hold, and on school wifi it did not.
 
-I used AI assistance throughout that build, and I would rather say so than have it inferred. It writes code quickly. It does not decide what the code should do, and that distinction is most of the job.
+**I write down what I got wrong.** Every repository here has a section for what is still broken or what I would do differently: a service worker that never registers, a stats screen that counts the wrong games, a README that once described features the code never had. A portfolio that only lists wins isn't telling you much, and the habit transfers better than any one project does.
 
-The Row Level Security gap is the clearest example. A model will happily hand you a working Supabase client that ships an anon key to the browser, because that code runs and the app looks finished. Knowing that a read-write key in the browser is a hole, and knowing to reach for RLS to close it, was the part I had to bring. Same with the fail-closed admin check, keeping the score journal on the device rather than trusting the network, and the interface decisions about what an organiser actually needs on screen while a match is running. I made those calls, then used AI to get there faster.
+**I use AI heavily, and keep the judgement.** It writes code quickly. It does not decide what the code should do, and that distinction is most of the job. Knowing that a read-write database key in the browser is a hole, that admin auth should fail closed rather than fall back to a default, that a model drafting a newsletter about children should never be handed a roster — that part is mine to bring. Then I use AI to get there faster, and I check what comes back, because I am the one who has to defend it.
 
-The tournament did the rest. 70 teams on school wifi during live rounds surfaced failure modes I would not have thought to test for, and the fixes after launch came from watching people use it, not from asking a model what might go wrong.
+**I finish things and put them in front of people.** Two systems are deployed and running rather than sitting in a branch: one that about 70 teams and their spectators used through a live competition, one built for schools and demonstrable end to end. Software with users teaches you things assignments don't, mostly about what happens when it breaks.
 
 ## Toolkit
 
