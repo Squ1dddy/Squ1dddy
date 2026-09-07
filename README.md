@@ -40,7 +40,7 @@ The closest I've come so far is a tournament platform that about 70 teams and th
 | 🏆 | **[insydsport](https://github.com/Squ1dddy/insydsport)**<br/><sub>🟢 [live](https://insydsport.live)</sub> | Tournament platform running a school handball competition. Live scoring, bracket trees, an admin console, and an offline score journal for when the school wifi drops out. RLS on every table, rate-limited admin login, fail-closed auth. | `Next.js 15` `React 19` `TypeScript` `Supabase` |
 | 🔐 | **[unsecure-pwa-security-audit](https://github.com/Squ1dddy/unsecure-pwa-security-audit)** | Security assessment of a deliberately vulnerable Flask app. Five vulnerability classes found by manual review and testing, each patched, mapped to OWASP, and written up in a full report. | `Python` `Flask` `SQLite` `bcrypt` |
 | 🚚 | **[bigtow-trailer-hire](https://github.com/Squ1dddy/bigtow-trailer-hire)** | Terminal trailer hire system. Order processing, cost calculation, customer lookup by surname, JSON persistence. | `Python` |
-| 📚 | **[hsc-software-engineering](https://github.com/Squ1dddy/hsc-software-engineering)** | Coursework. A text RPG with a real class hierarchy, a console maths tutor, a Flask PWA and some early web work. | `Python` `Flask` `HTML/CSS` |
+| 📚 | **[hsc-software-engineering](https://github.com/Squ1dddy/hsc-software-engineering)** | Coursework. A terminal Wordle with duplicate-letter handling and a test harness, a text RPG with a real class hierarchy, a console maths tutor, a Flask PWA and some early web work. | `Python` `Flask` `HTML/CSS` |
 
 ## How I work
 
@@ -48,16 +48,22 @@ The security decision I'm most pleased with is a small one. The admin login on i
 
 I also try to write down what I got wrong. The first ten commits of that project had **no Row Level Security**, which meant anyone who opened DevTools was holding a database key that could delete the entire tournament. It's fixed, and the README says so, because a portfolio that only lists wins isn't telling you much.
 
+I used AI assistance throughout that build, and I would rather say so than have it inferred. It writes code quickly. It does not decide what the code should do, and that distinction is most of the job.
+
+The Row Level Security gap is the clearest example. A model will happily hand you a working Supabase client that ships an anon key to the browser, because that code runs and the app looks finished. Knowing that a read-write key in the browser is a hole, and knowing to reach for RLS to close it, was the part I had to bring. Same with the fail-closed admin check, keeping the score journal on the device rather than trusting the network, and the interface decisions about what an organiser actually needs on screen while a match is running. I made those calls, then used AI to get there faster.
+
+The tournament did the rest. 70 teams on school wifi during live rounds surfaced failure modes I would not have thought to test for, and the fixes after launch came from watching people use it, not from asking a model what might go wrong.
+
 ## Toolkit
 
 **Languages**<br/>
 ![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white) ![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white) ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black) ![SQL](https://img.shields.io/badge/SQL-4479A1?style=flat-square&logo=postgresql&logoColor=white) ![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=flat-square&logo=html5&logoColor=white) ![CSS](https://img.shields.io/badge/CSS-1572B6?style=flat-square&logo=css&logoColor=white)
 
 **Frameworks and platforms**<br/>
-![Next.js](https://img.shields.io/badge/Next.js-1B2A38?style=flat-square&logo=nextdotjs&logoColor=white) ![React](https://img.shields.io/badge/React-61DAFB?style=flat-square&logo=react&logoColor=black) ![Tailwind](https://img.shields.io/badge/Tailwind-06B6D4?style=flat-square&logo=tailwindcss&logoColor=white) ![Flask](https://img.shields.io/badge/Flask-1B2A38?style=flat-square&logo=flask&logoColor=white) ![Supabase](https://img.shields.io/badge/Supabase-3FCF8E?style=flat-square&logo=supabase&logoColor=black) ![Netlify](https://img.shields.io/badge/Netlify-00C7B7?style=flat-square&logo=netlify&logoColor=black)
+![Flask](https://img.shields.io/badge/Flask-1B2A38?style=flat-square&logo=flask&logoColor=white) ![Supabase](https://img.shields.io/badge/Supabase-3FCF8E?style=flat-square&logo=supabase&logoColor=black) ![Netlify](https://img.shields.io/badge/Netlify-00C7B7?style=flat-square&logo=netlify&logoColor=black)
 
 **Security**<br/>
-![OWASP Top 10](https://img.shields.io/badge/OWASP_Top_10-1B2A38?style=flat-square&logo=owasp&logoColor=white) ![Postgres RLS](https://img.shields.io/badge/Postgres_RLS-4169E1?style=flat-square&logo=postgresql&logoColor=white) ![bcrypt](https://img.shields.io/badge/bcrypt-525252?style=flat-square) ![Manual code review](https://img.shields.io/badge/Manual_code_review-6E5494?style=flat-square)
+![OWASP Top 10](https://img.shields.io/badge/OWASP_Top_10-1B2A38?style=flat-square&logo=owasp&logoColor=white) ![bcrypt](https://img.shields.io/badge/bcrypt-525252?style=flat-square) ![Manual code review](https://img.shields.io/badge/Manual_code_review-6E5494?style=flat-square)
 
 ## Certifications
 
