@@ -35,12 +35,25 @@ The closest I've come so far is a tournament platform that about 70 teams and th
 
 ## Projects
 
+Independent work, built outside class and still running.
+
 | | Project | What it is | Built with |
 |:--:|---------|-----------|------------|
 | 🏆 | **[insydsport](https://github.com/Squ1dddy/insydsport)**<br/><sub>🟢 [live](https://insydsport.live)</sub> | Tournament platform running a school handball competition. Live scoring, bracket trees, an admin console, and an offline score journal for when the school wifi drops out. RLS on every table, rate-limited admin login, fail-closed auth. | `Next.js 15` `React 19` `TypeScript` `Supabase` |
-| 🔐 | **[unsecure-pwa-security-audit](https://github.com/Squ1dddy/unsecure-pwa-security-audit)** | Security assessment of a deliberately vulnerable Flask app. Five vulnerability classes found by manual review and testing, each patched, mapped to OWASP, and written up in a full report. | `Python` `Flask` `SQLite` `bcrypt` |
-| 🚚 | **[bigtow-trailer-hire](https://github.com/Squ1dddy/bigtow-trailer-hire)** | Terminal trailer hire system. Order processing, cost calculation, customer lookup by surname, JSON persistence. | `Python` |
-| 📚 | **[hsc-software-engineering](https://github.com/Squ1dddy/hsc-software-engineering)** | Coursework. A terminal Wordle with duplicate-letter handling and a test harness, a text RPG with a real class hierarchy, a console maths tutor, a Flask PWA and some early web work. | `Python` `Flask` `HTML/CSS` |
+
+## HSC Software Engineering
+
+In-class assessment tasks from Software Engineering at Inner Sydney High School, each in its own repository. Newest first.
+
+| | Project | What it is | Year |
+|:--:|---------|-----------|:--:|
+| 🔐 | **[unsecure-pwa-security-audit](https://github.com/Squ1dddy/unsecure-pwa-security-audit)** | Security assessment of a deliberately vulnerable Flask app. Five vulnerability classes found by manual review and testing, each patched, mapped to OWASP, and written up in a full report. | 12 |
+| 🟩 | **[terminal-wordle](https://github.com/Squ1dddy/terminal-wordle)** | A term-long build. Six guesses, colour-coded tiles, a two-player mode and CSV-persisted stats. The guess checker handles duplicate letters in two passes, and a harness tests it against normal, boundary, faulty and abnormal input. | 12 |
+| 🚚 | **[bigtow-trailer-hire](https://github.com/Squ1dddy/bigtow-trailer-hire)** | Terminal trailer hire system. Order processing, cost calculation, customer lookup by surname, JSON persistence. | 12 |
+| 🌐 | **[vscode-extensions-pwa](https://github.com/Squ1dddy/vscode-extensions-pwa)** | Flask progressive web app serving a catalogue from SQLite. Service worker asset caching and a web app manifest, so it installs and opens offline. | 12 |
+| ⚔️ | **[text-adventure-rpg](https://github.com/Squ1dddy/text-adventure-rpg)** | The object-oriented task. `Item`, `Character` and `Room` base classes whose subclasses change behaviour rather than add fields, so a locked door is a room that refuses entry instead of an `if` statement. | 11 |
+| 📐 | **[console-maths-tutor](https://github.com/Squ1dddy/console-maths-tutor)** | Terminal maths tutor. Pythagoras solver, area calculator, triangle classifier and a randomised quiz, with a unit test harness for the side-length logic. | 11 |
+| 🏐 | **[volleyball-website](https://github.com/Squ1dddy/volleyball-website)** | Static single-page site, hand-written HTML and CSS with no framework. The earliest work I have kept, here for the record rather than as a showcase. | 10 |
 
 ## How I work
 
