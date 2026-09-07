@@ -3,35 +3,23 @@
 # Beau Bastock
 
 <a href="https://insydsport.live">
-  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=500&size=22&pause=1200&color=00B4D8&center=true&vCenter=true&width=620&lines=Cybersecurity+%C2%B7+Python+%C2%B7+TypeScript;Running+a+live+platform+for+70+teams;Bachelor+of+Cybersecurity+%28IDeA%29+at+UTS" alt="Cybersecurity, Python, TypeScript" />
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=500&size=22&pause=1200&color=00B4D8&center=true&vCenter=true&width=620&lines=Cybersecurity+%C2%B7+AI%2FML+%C2%B7+TypeScript;Running+a+live+platform+for+70+teams;Building+software+people+actually+use" alt="Cybersecurity, Python, TypeScript" />
 </a>
 
 <br/>
 
 <img src="https://img.shields.io/badge/Sydney-Australia-00B4D8?style=flat-square" alt="Sydney, Australia" />
 <img src="https://img.shields.io/badge/Year_12-Inner_Sydney_High-1B2A38?style=flat-square" alt="Year 12" />
-<a href="https://www.uts.edu.au/for-students/admissions-entry/entry-schemes/engineering-and-information-technology-cadetship"><img src="https://img.shields.io/badge/Applying-UTS_Cybersecurity_(IDeA)-0F4C81?style=flat-square" alt="UTS IDeA" /></a>
+<img src="https://img.shields.io/badge/Focus-Cybersecurity_&_AI%2FML-0F4C81?style=flat-square" alt="Focus: cybersecurity and AI/ML" />
 <a href="https://insydsport.live"><img src="https://img.shields.io/badge/insydsport.live-online-2EA043?style=flat-square" alt="insydsport.live is online" /></a>
 
 </div>
 
 ---
 
-I'm a Year 12 student applying for the **Bachelor of Cybersecurity (IDeA)** at UTS. IDeA is the cadetship stream, so it comes with a paid industry role from first year. That's the part I want. I'd rather work on real systems while I study than wait three years to find out what the job is actually like.
+I'm a Year 12 student heading towards a career in **cybersecurity and AI/ML**. What I want out of it is the work itself, early: I'd rather build and break real systems while I study than wait three years to find out what the job is actually like.
 
 The closest I've come so far is a tournament platform that about 70 teams and their spectators use during competition weeks. Software with users teaches you things assignments don't, mostly about what happens when it breaks.
-
-<br/>
-
-<div align="center">
-  <a href="https://insydsport.live">
-    <img src="https://raw.githubusercontent.com/Squ1dddy/insydsport/main/docs/home.png" width="78%" alt="insydsport.live home page showing the Year 12 grand final result" />
-  </a>
-  <br/>
-  <sub><b>insydsport.live</b> · live scoring, bracket trees and an admin console for the Inner Sydney handball knockout</sub>
-</div>
-
-<br/>
 
 ## Projects
 
@@ -39,6 +27,7 @@ Independent work, built outside class and still running.
 
 | | Project | What it is | Built with |
 |:--:|---------|-----------|------------|
+| 🏫 | **[traksy-showcase](https://github.com/Squ1dddy/traksy-showcase)**<br/><sub>🟢 [live demo](https://traksy.netlify.app/demo)</sub> | School sport recognition platform for NSW schools. Log a result on the sideline and it becomes an announcement, a newsletter item and a social post. Postgres RLS multi-tenancy across 29 migrations, publishing gated on media consent at send time, and AI drafting fenced to a single truncated line. Source private, live demo public. | `Next.js` `TypeScript` `Supabase` `Claude API` |
 | 🏆 | **[insydsport](https://github.com/Squ1dddy/insydsport)**<br/><sub>🟢 [live](https://insydsport.live)</sub> | Tournament platform running a school handball competition. Live scoring, bracket trees, an admin console, and an offline score journal for when the school wifi drops out. RLS on every table, rate-limited admin login, fail-closed auth. | `Next.js 15` `React 19` `TypeScript` `Supabase` |
 
 ## HSC Software Engineering
